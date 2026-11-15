@@ -1,0 +1,49 @@
+state,variant,thickness_nm,W_mean_nm,W_sd_nm
+weak,ideal,10,0.2013,0.0001
+weak,ideal,16,0.2471,0.0002
+weak,ideal,27,0.305,0.0003
+weak,ideal,44,0.3644,0.0003
+weak,ideal,73,0.4294,0.0004
+weak,ideal,120,0.4949,0.0004
+weak,tip (R=10nm),10,0.1419,0.0002
+weak,tip (R=10nm),16,0.1679,0.0002
+weak,tip (R=10nm),27,0.202,0.0004
+weak,tip (R=10nm),44,0.2386,0.0004
+weak,tip (R=10nm),73,0.28,0.0005
+weak,tip (R=10nm),120,0.3246,0.0008
+weak,substrate (0.2nm),10,0.2851,0.0011
+weak,substrate (0.2nm),16,0.3172,0.0011
+weak,substrate (0.2nm),27,0.3656,0.0009
+weak,substrate (0.2nm),44,0.4152,0.0012
+weak,substrate (0.2nm),73,0.4739,0.0007
+weak,substrate (0.2nm),120,0.5333,0.0007
+weak,substrate+tip,10,0.2457,0.0013
+weak,substrate+tip,16,0.2592,0.0013
+weak,substrate+tip,27,0.2844,0.001
+weak,substrate+tip,44,0.3095,0.0016
+weak,substrate+tip,73,0.3434,0.0014
+weak,substrate+tip,120,0.3792,0.0013
+strong,ideal,10,0.0242,0.0002
+strong,ideal,16,0.0273,0.0001
+strong,ideal,27,0.0311,0.0002
+strong,ideal,44,0.0352,0.0001
+strong,ideal,73,0.0399,0.0003
+strong,ideal,120,0.0448,0.0004
+strong,tip (R=10nm),10,0.0242,0.0002
+strong,tip (R=10nm),16,0.0273,0.0001
+strong,tip (R=10nm),27,0.0311,0.0002
+strong,tip (R=10nm),44,0.0352,0.0001
+strong,tip (R=10nm),73,0.0399,0.0003
+strong,tip (R=10nm),120,0.0448,0.0004
+strong,substrate (0.2nm),10,0.1773,0.0022
+strong,substrate (0.2nm),16,0.1713,0.0022
+strong,substrate (0.2nm),27,0.1629,0.0024
+strong,substrate (0.2nm),44,0.1551,0.0011
+strong,substrate (0.2nm),73,0.1443,0.0016
+strong,substrate (0.2nm),120,0.1357,0.0014
+strong,substrate+tip,10,0.1773,0.0022
+strong,substrate+tip,16,0.1713,0.0022
+strong,substrate+tip,27,0.1629,0.0024
+strong,substrate+tip,44,0.1551,0.0011
+strong,substrate+tip,73,0.1443,0.0016
+strong,substrate+tip,120,0.1357,0.0014

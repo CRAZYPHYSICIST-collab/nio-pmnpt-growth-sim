@@ -1,0 +1,45 @@
+﻿=== EXACT LINEAR SOLUTION (N=512, dx=2 nm, L=1024 nm) ===
+Noise: OMEGA=0.0182 nm^3; RD limit W=sqrt(tau*OMEGA/dx^2) -> at 100 nm: 0.675 nm
+--- Boundary cases (beta, 10-120 nm fit) ---
+random deposition only: 0.500 (theory 1/2) | surface tension only, l_nu=20 nm: 0.061 (theory 0, logarithmic) | surface diffusion only, l_D=20 nm: 0.248 (theory 1/4)
+--- beta (10-120 nm fit) and W100 ---
+l_nu=0 nm: [lD=0.50 b=0.484 W=0.650] [lD=1.00 b=0.362 W=0.471] [lD=2.00 b=0.233 W=0.229] [lD=4.00 b=0.236 W=0.109] [lD=8.00 b=0.244 W=0.054] [lD=16.00 b=0.248 W=0.027] [lD=32.00 b=0.248 W=0.013] [lD=64.00 b=0.244 W=0.007] 
+l_nu=2 nm: [lD=0.50 b=0.200 W=0.289] [lD=1.00 b=0.192 W=0.272] [lD=2.00 b=0.188 W=0.192] [lD=4.00 b=0.222 W=0.104] [lD=8.00 b=0.240 W=0.053] [lD=16.00 b=0.247 W=0.027] [lD=32.00 b=0.248 W=0.013] [lD=64.00 b=0.244 W=0.007] 
+l_nu=5 nm: [lD=0.50 b=0.097 W=0.138] [lD=1.00 b=0.099 W=0.137] [lD=2.00 b=0.114 W=0.124] [lD=4.00 b=0.173 W=0.087] [lD=8.00 b=0.223 W=0.050] [lD=16.00 b=0.242 W=0.026] [lD=32.00 b=0.246 W=0.013] [lD=64.00 b=0.243 W=0.007] 
+l_nu=10 nm: [lD=0.50 b=0.074 W=0.076] [lD=1.00 b=0.074 W=0.076] [lD=2.00 b=0.078 W=0.074] [lD=4.00 b=0.111 W=0.062] [lD=8.00 b=0.179 W=0.043] [lD=16.00 b=0.226 W=0.025] [lD=32.00 b=0.242 W=0.013] [lD=64.00 b=0.242 W=0.006] 
+l_nu=20 nm: [lD=0.50 b=0.061 W=0.041] [lD=1.00 b=0.061 W=0.041] [lD=2.00 b=0.062 W=0.041] [lD=4.00 b=0.071 W=0.038] [lD=8.00 b=0.115 W=0.030] [lD=16.00 b=0.182 W=0.021] [lD=32.00 b=0.226 W=0.012] [lD=64.00 b=0.237 W=0.006] 
+l_nu=0 + substrate W0=0.2nm: [lD=0.50 b=0.374 W=0.680] [lD=1.00 b=0.257 W=0.511] [lD=2.00 b=0.103 W=0.303] [lD=4.00 b=0.025 W=0.221] [lD=8.00 b=-0.075 W=0.161] [lD=16.00 b=-0.176 W=0.095] [lD=32.00 b=-0.221 W=0.050] [lD=64.00 b=-0.243 W=0.025] 
+--- Pixel-size sensitivity (nu=0, L=1024 nm) ---
+lD=1 nm: [dx=1 nm: beta=0.233, W100=0.457] [dx=2 nm: beta=0.362, W100=0.471] [dx=4 nm: beta=0.484, W100=0.325] 
+lD=10 nm: [dx=1 nm: beta=0.249, W100=0.043] [dx=2 nm: beta=0.246, W100=0.043] [dx=4 nm: beta=0.239, W100=0.043] 
+=== VIRTUAL EXPERIMENT (N=512, dx=2 nm, equivalent to a 1x1 um AFM image; weak lD=1 nm, strong lD=10 nm; nu=0) ===
+Arrhenius equivalent: kappa ratio = (lD ratio)^4 = 10000 ; between 25 and 300 C, Ed ~ 0.49 eV (1/T prefactor and F neglected)
+--- beta (mean +- SD across repeats; SE = mean fit standard error) ---
+ideal              weak: 0.371 +- 0.014 (SE 0.010)   strong: 0.250 +- 0.004 (SE 0.004)
+tip (R=10nm)       weak: 0.335 +- 0.006 (SE 0.006)   strong: 0.250 +- 0.004 (SE 0.004)
+substrate (0.2nm)  weak: 0.255 +- 0.003 (SE 0.003)   strong: -0.106 +- 0.004 (SE 0.007)
+substrate+tip      weak: 0.182 +- 0.008 (SE 0.007)   strong: -0.106 +- 0.004 (SE 0.007)
+--- W(60 nm) / W(100 nm) [nm] ---
+ideal              weak: 0.405 / 0.471   strong: 0.038 / 0.042   ratio(100nm): 11.19
+tip (R=10nm)       weak: 0.265 / 0.307   strong: 0.038 / 0.042   ratio(100nm): 7.30
+substrate (0.2nm)  weak: 0.450 / 0.512   strong: 0.148 / 0.148   ratio(100nm): 3.47
+substrate+tip      weak: 0.327 / 0.368   strong: 0.148 / 0.148   ratio(100nm): 2.49
+PSD separation frequency (120 nm, weak/strong > 3): k* = 0.104 nm^-1 ; tip limit ~ 2pi/R = 0.63 nm^-1
+Exact solution W100: weak=0.471 strong=0.043; W60: weak=0.404 strong=0.038
+=== NONLINEAR 2D SIMULATION (N=256, dx=2 nm, L=512 nm, ETD2RK + 2/3 de-aliasing + Dasgupta regularization (1-exp(-|grad h|^2))) ===
+weak c=lambda/F=0: beta=0.362 +- 0.003  W60=0.402  W100=0.470  (exact linear W100=0.471)
+strong c=lambda/F=0: beta=0.230 +- 0.021  W60=0.037  W100=0.042  (exact linear W100=0.043)
+strong c=lambda/F=1: beta=0.249 +- 0.019  W60=0.039  W100=0.044  (exact linear W100=0.043)
+strong c=lambda/F=-1: beta=0.228 +- 0.022  W60=0.038  W100=0.041  (exact linear W100=0.043)
+strong c=lambda/F=3: beta=0.247 +- 0.026  W60=0.037  W100=0.043  (exact linear W100=0.043)
+Time-step check (strong, c=3, same seed): W100 dt=0.1 -> 0.041, dt=0.05 -> 0.040
+
+=== SUMMARY TABLE ===
+Boundary cases, beta (RD / nu only / kappa only): 0.50 / 0.06 / 0.25  (theory: 1/2, 0, 1/4)
+Effective beta, weak / strong diffusion (10-120 nm, 8 repeats): 0.37 +- 0.01 / 0.250 +- 0.004
+Same, with 0.2 nm substrate roughness + AFM tip: 0.18 +- 0.01 / -0.106 +- 0.004
+Roughness ratio at 100 nm, weak / strong: 11.19 (ideal) - 2.49 (substrate + tip)
+Spatial frequency where the PSDs separate: 0.10 nm^-1 (tip limit ~ 0.63 nm^-1)
+Effect of the nonlinear term, strong diffusion (lambda/F = -1...3): beta = 0.23 - 0.25
+Pixel-size sensitivity of beta, weak diffusion (1 / 2 / 4 nm): 0.23 / 0.36 / 0.48
+Total time: 857.8508 s

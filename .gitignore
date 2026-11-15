@@ -1,0 +1,4 @@
+*.exe
+*.pdb
+t/
+run_all.log

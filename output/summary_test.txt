@@ -1,0 +1,6 @@
+﻿FFT round-trip max error: 1.78E-015  (2 FFT 256^2: 16 ms)
+RD: W_exact(100nm)=0.675  W_sampled=0.676   RD analytic=0.675
+MH: W_exact(100nm)=0.043  W_sampled=0.043   RD analytic=0.675
+EW: W_exact(100nm)=0.076  W_sampled=0.076   RD analytic=0.675
+MH lD=20: W_exact=0.021  continuum analytic=0.021
+Total time: 1.0134 s
