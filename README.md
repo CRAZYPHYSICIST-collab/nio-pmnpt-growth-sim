@@ -77,6 +77,13 @@ The "SUMMARY TABLE" block at the end of `output/summary_all.txt`:
 | `fig5_surfaces.png` | Example surface maps at 100 nm |
 | `nonlinear_W.csv`, `fig6_nonlinear.png` | Effect of the λ term |
 
+## Additional validation (`validation/`)
+
+| Folder | What it tests | Run | Result |
+|---|---|---|---|
+| `psd_identifiability/` | Can κ/F and its activation energy E_d be recovered from noisy AFM-like PSDs? The analytic linear model is fitted by least squares to synthetic PSDs at 4 temperatures × 6 thicknesses, 20 noise seeds. | `python psd_fit_test.py` (numpy, scipy, matplotlib; seconds) | κ/F recovered within 3 % at 400–573 K; E_d = 0.53 ± 0.06 eV (true 0.50 eV). At 300 K (diffusion length ≈ 1 nm) κ/F is not identifiable (48 % scatter) because its signature lies above the measurable k range. |
+| `pinn_bo_boron/` | Generic test of the PINN + Bayesian optimization + Arrhenius chain on synthetic SIMS profiles of boron diffusion in Si (inverse PINN, hyperparameters tuned by BO at each temperature). | `python sims_pinn_bo.py` (numpy, scipy, scikit-learn, torch; tens of minutes on CPU) | E_a = 3.45 eV (true 3.46 eV); D recovered within 3–14 % at each temperature. |
+
 ## Limitations
 
 - **Weak diffusion is not resolved by the grid.** ℓ_D = 1 nm is smaller than the pixel size (2 nm), so the weak-diffusion β = 0.37 contains a resolution effect (0.23–0.48 for 1–4 nm pixels). Read it as the effective exponent expected in a 2 nm-pixel AFM measurement, not as a theoretical exponent.
